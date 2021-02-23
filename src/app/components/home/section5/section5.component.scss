@@ -1,0 +1,49 @@
+.section5{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    margin: 10px 0px;
+    padding: 40px 45px;
+    justify-content: center;
+    &_heading{
+        color: white;
+        text-align: center;
+        &_p1{
+              font-size: 50px;
+              font-weight: 700;
+              letter-spacing: 0.1rem;
+              line-height: 4rem;
+              padding: 0px 5px;
+        }
+        &_p2{
+              font-size: x-large;
+              margin: 0rem auto 2.5rem auto;
+        }
+        &_p3{
+              font-size: larger;
+             padding-bottom: 10px;
+        }
+        
+  }
+}
+
+.input{
+    &_white{
+          background-color: white;
+          width: 500px;
+          height: 55px;
+          &_inpt{
+                width: 500px;
+          }
+    }
+    &_orange{
+          button{
+                height: 55px;
+                width: 200px;
+                background-color: #e50914;
+                color: white;
+                font-size: x-large;
+          }
+    }
+}

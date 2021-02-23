@@ -1,0 +1,65 @@
+.section1{
+      background-image: url("/assets/img/bg-image.jpg");
+      height: 748px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &_header{
+            margin: 0rem 2rem;
+            padding-top: 1.5rem;
+            &_span{
+                  color: #e50914;
+                  font-weight: bolder;
+                  font-size: 2.5rem;
+                  letter-spacing: 0.1rem;
+            }
+            &_button{
+                  background-color: #e50914;
+                  color: white;
+                  font-size: larger;
+                  float: right;
+            }
+      }
+      &_heading{
+            color: white;
+            width: 45%;
+            margin:12rem  auto;
+            text-align: center;
+            &_p1{
+                  font-size: 50px;
+                  font-weight: 700;
+                  letter-spacing: 0.1rem;
+                  line-height: 4rem;
+                  padding: 0px 5px;
+            }
+            &_p2{
+                  font-size: x-large;
+                  margin: 0rem auto 2.5rem auto;
+            }
+            &_p3{
+                  font-size: larger;
+                 padding-bottom: 10px;
+            }
+            
+      }
+}
+
+.input{
+      &_white{
+            background-color: white;
+            width: 400px;
+            height: 55px;
+            &_inpt{
+                  width: 400px;
+            }
+      }
+      &_orange{
+            button{
+                  height: 55px;
+                  width: 200px;
+                  background-color: #e50914;
+                  color: white;
+                  font-size: x-large;
+            }
+      }
+}

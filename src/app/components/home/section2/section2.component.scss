@@ -1,0 +1,23 @@
+.section2{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    margin: 10px 0px;
+    padding: 0px 45px;
+    justify-content: center;
+    &_text{
+        margin-left: 40px;
+        &_h1{
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+            margin-bottom: 30px;
+        }
+        &_p{
+            font-size: x-large;
+            letter-spacing: 0.1rem;
+            line-height: 2rem;
+        }
+    }
+}
