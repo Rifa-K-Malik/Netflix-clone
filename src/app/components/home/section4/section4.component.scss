@@ -1,4 +1,5 @@
 .section4{
+    grid-area: section4;
     display: flex;
     align-items: center;
     color: white;
@@ -13,6 +14,7 @@
             font-weight: 600;
             letter-spacing: 0.2rem;
             margin-bottom: 30px;
+            line-height: 3.5rem;
         }
         &_p{
             font-size: x-large;

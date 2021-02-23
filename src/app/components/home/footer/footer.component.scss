@@ -1,0 +1,23 @@
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: #505050;
+    &_div{
+        margin: 0px 200px;
+        padding: 50px;
+        p{
+            margin-bottom: 20px;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0px;
+            li{
+                line-height: 2rem;
+            }
+        }
+    }
+}
+
+.mrr{
+    margin-right: 70px;
+}

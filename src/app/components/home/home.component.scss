@@ -1,4 +1,12 @@
-.container-fluid{
+.contain{
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'section1'
+    'section2'
+    'section3'
+    'section4'
+    'section5'
+    'footer';
 }

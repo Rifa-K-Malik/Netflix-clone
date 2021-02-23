@@ -1,4 +1,5 @@
 .section1{
+      grid-area: section1;
       background-image: url("/assets/img/bg-image.jpg");
       height: 748px;
       background-position: center;
@@ -22,8 +23,8 @@
       }
       &_heading{
             color: white;
-            width: 45%;
-            margin:12rem  auto;
+            width: 700px;
+            margin-top:12rem;
             text-align: center;
             &_p1{
                   font-size: 50px;
@@ -45,6 +46,7 @@
 }
 
 .input{
+      justify-content: center;
       &_white{
             background-color: white;
             width: 400px;

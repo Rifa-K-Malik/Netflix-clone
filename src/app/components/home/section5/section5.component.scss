@@ -1,4 +1,5 @@
 .section5{
+      grid-area: section5;
     display: flex;
     align-items: center;
     color: white;
@@ -47,3 +48,24 @@
           }
     }
 }
+
+.expand{
+      width: 700px;
+      mat-expansion-panel{
+            background-color: #333;
+            margin-bottom: 10px;
+            mat-expansion-panel-header{
+                  mat-panel-title{
+                        color: white;
+                        font-size: 25px;
+                  }
+            }
+            p{
+                  color: white;
+                  font-size: 25px;
+                  line-height: 30px;
+                  text-align: left;
+            }
+      }
+}
+
