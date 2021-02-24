@@ -1,6 +1,39 @@
-img{
+// video{
+//     height: 100%;
+//     width: 100%;
+// }
+
+.login{
+    grid-area: section1;
+    background-image: url("/assets/img/bg-image.jpg");
     height: 748px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    &_header{
+          margin: 0rem 2rem;
+          padding-top: 1.5rem;
+          &_span{
+                color: #e50914;
+                font-weight: bolder;
+                font-size: 2.5rem;
+                letter-spacing: 0.1rem;
+          }
+    }
+    &_box{
+        background: rgba($color: #000000, $alpha: 0.7);
+        margin: auto;
+        width: 500px;
+        padding: 30px;
+        color: white;
+        font-weight: 900;
+       &_content{
+           margin: 0px 30px;
+           h1{
+               font-size: xx-large;
+              font-weight: 600;
+              letter-spacing: 0.1rem;
+           }
+       }
+    }
 }
