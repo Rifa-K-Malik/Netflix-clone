@@ -7,8 +7,9 @@
     margin: 10px 0px;
     padding: 0px 45px;
     justify-content: center;
+    width: 100%;
     &_text{
-        margin-left: 40px;
+        width: 50%;
         &_h1{
             font-size: 3rem;
             font-weight: 600;
@@ -22,4 +23,23 @@
             line-height: 2rem;
         }
     }
+    &_img{
+        position: relative;
+        height: 450px;
+        justify-content: left;
+        video{
+            position: relative;
+            height: 250px;
+            width: 420px;
+            margin-top: 80px;
+            margin-left: 75px;
+            
+        }
+    }
+}
+
+.img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }

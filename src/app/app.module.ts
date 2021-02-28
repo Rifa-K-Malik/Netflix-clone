@@ -14,6 +14,8 @@ import { Section4Component } from './components/home/section4/section4.component
 import { Section5Component } from './components/home/section5/section5.component';
 import { FooterComponent } from './components/home/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MainpaheComponent } from './components/mainpahe/mainpahe.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     Section3Component,
     Section4Component,
     Section5Component,
-    FooterComponent
+    FooterComponent,
+    MainpaheComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
