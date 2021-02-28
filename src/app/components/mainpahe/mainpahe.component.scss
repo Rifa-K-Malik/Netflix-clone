@@ -1,1 +1,59 @@
-
+.bb{
+    margin: 0;
+    padding: 0;
+    &_banner{
+        &_img{
+            position: relative;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.header{
+    position:absolute;
+    top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+    &_left{
+        display: flex;;
+        align-items: center;
+        &_img{
+            img{
+                height: 40px;
+            }
+        }
+        &_list{
+           ul{
+               color: white;
+               font-weight: bold;
+               list-style: none;
+               font-size: 16px;
+               li{
+                   float: left;
+                  padding: 0px 10px;
+                  a{
+                      color: white;
+                  }
+               }
+           }
+        }
+    }
+    &_right{
+        ul{
+            color: white;
+            font-weight: bold;
+            list-style: none;
+            font-size: 16px;
+            li{
+                float: left;
+               padding: 0px 10px;
+               a{
+                   color: white;
+               }
+            }
+        }
+    }
+}
