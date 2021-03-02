@@ -2,17 +2,42 @@
     margin: 0;
     padding: 0;
     &_banner{
+        // Start of banner styling
         &_img{
-            position: relative;
-            img{
-                width: 100%;
+            position: absolute;
+            width: 100%;
+            h2{
+                color: white;
+            }
+            .btn{
+                &_play{
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    span{
+                        margin-left: 5px;
+                    }
+                }
+                &_info{
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: white;
+                    background-color: gray;
+                    span{
+                        margin-left: 5px;
+                    }
+                }
             }
         }
     }
 }
+// End of banner styling 
+
+
+// Start of header 
 .header{
-    position:absolute;
-    top: 10px;
+    position:sticky;
+    top: 0px;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -28,7 +53,7 @@
         &_list{
            ul{
                color: white;
-               font-weight: bold;
+               font-weight: 500;
                list-style: none;
                font-size: 16px;
                li{
@@ -57,3 +82,4 @@
         }
     }
 }
+// End of Header 

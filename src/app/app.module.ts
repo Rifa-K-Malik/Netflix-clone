@@ -16,6 +16,8 @@ import { FooterComponent } from './components/home/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainpaheComponent } from './components/mainpahe/mainpahe.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { SliderComponent } from './components/slider/slider.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SlickCarouselModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

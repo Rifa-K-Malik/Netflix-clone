@@ -1,8 +1,26 @@
 <div class="container-fluid bb">
     <div class="bb_banner">
-        <div class="bb_banner_img">
-            <img src="assets/img/banner.webp" alt="">
+
+<!-- Start of BAnner secction -->
+        <div class="bb_banner_img" [ngStyle]="{ 
+            'background-image' : 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3))'
+        }">
+            <h2>TITLE</h2>
+            <div class="btn">
+                <button mat-flat-button class="btn_play">
+                    <mat-icon>play_arrow</mat-icon>
+                    <span>Play</span>
+                </button>
+                <button mat-flat-button class="btn_info">
+                    <mat-icon>info</mat-icon>
+                    <span>More Info</span>
+                </button>
+            </div>
         </div>
+<!-- End of Banner Section -->
+
+
+<!-- Start of header section  -->
         <div class="header">
             <div class="header_left">
                 <div class="header_left_img">
@@ -23,7 +41,6 @@
                     <li><a href="#">
                             <mat-icon>search</mat-icon>
                         </a></li>
-                    <li><a href="#">Children</a></li>
                     <li><a href="#">
                             <mat-icon>card_giftcard</mat-icon>
                         </a></li>
@@ -36,5 +53,13 @@
                 </ul>
             </div>
         </div>
+<!-- End of Header Section  -->
     </div>
+
+<div class="content">
+    <app-slider title="TRENDING"></app-slider>
+    <app-slider title="TOP RATED"></app-slider>
+
+</div>
+
 </div>
