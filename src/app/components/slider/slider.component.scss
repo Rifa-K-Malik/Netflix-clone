@@ -1,5 +1,31 @@
-h2{
+h2 {
+    font-size: x-large;
     color: white;
-    font-size: 3rem;
-}
-.movie{color: white;}
+    padding-left: 10px;
+    margin-bottom: 0;
+  }
+  
+  img {
+    border-radius: 5px;
+  }
+  
+  .movie {
+   padding-bottom: 30px;
+  
+    .movie_images {
+      div.thumbnail .carousel {
+        width:100%;
+        display: flex;
+        .items {
+          transition: all 0.3s ease;
+         padding: 10px;
+        }
+  
+        .items:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  

@@ -3,11 +3,11 @@
 
 <!-- Start of BAnner secction -->
         <div class="bb_banner_img" [ngStyle]="{ 
-            'background-image' : 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3))'
+            'background-image' : 'linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('+headerBGUrl+')'
         }">
-            <h2>TITLE</h2>
+            <h2>{{trending?.results[0].title}}</h2>
             <div class="btn">
-                <button mat-flat-button class="btn_play">
+                <button mat-flat-button class="btn_play"> 
                     <mat-icon>play_arrow</mat-icon>
                     <span>Play</span>
                 </button>
@@ -21,7 +21,7 @@
 
 
 <!-- Start of header section  -->
-        <div class="header">
+        <div class="header" id="stickyHeader" [class.sticky]="sticky" #stickHeader>
             <div class="header_left">
                 <div class="header_left_img">
                     <img src="assets/img/netflix.svg" alt="">
@@ -57,8 +57,11 @@
     </div>
 
 <div class="content">
-    <app-slider title="TRENDING"></app-slider>
-    <app-slider title="TOP RATED"></app-slider>
+    <app-slider title="Trending" [movies]="trending" [sliderConfig]="sliderConfig" ></app-slider>
+    <app-slider title="Top Rated" [movies]="topRated" [sliderConfig]="sliderConfig"></app-slider>
+    <app-slider title="Now Playing" [movies]="nowPlaying" [sliderConfig]="sliderConfig" ></app-slider>
+    <app-slider title="Originals" [movies]="originals" [sliderConfig]="sliderConfig" ></app-slider>
+    <app-slider title="Popular" [movies]="popular" [sliderConfig]="sliderConfig" ></app-slider>
 
 </div>
 

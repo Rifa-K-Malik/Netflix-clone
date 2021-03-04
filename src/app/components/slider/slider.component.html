@@ -1,13 +1,32 @@
+
+  <h2>{{title}}</h2>
+
+  <div class="movie">
+      <div class="movie_images">
+          <div class="thumbnail">
+              <ngx-slick-carousel [config]="sliderConfig" class="carousel" >
+                  <div class="items" *ngFor="let m of movies.results" ngxSlickItem>
+                      <img src="https://image.tmdb.org/t/p/w200{{m?.poster_path}}" alt="{{m.title}}">                
+                  </div>
+              </ngx-slick-carousel>
+          </div>
+      </div>
+  </div>
+
+
+
+
+<!-- 
 <h2>{{title}}</h2>
 
 <div class="movie">
-    <div class="movie_images">
-        <div class="thumbnail">
-            <ngx-slick-carousel [config]="sliderCofig" class="carousel" >
-                <div class="items" *ngFor="let t of [].constructor(6)">
-                    <h4>Images</h4>
-                </div>
-            </ngx-slick-carousel>
+  <div class="movie__images">
+    <div class="thumbnails">
+      <ngx-slick-carousel [config]="sliderConfig" class="carousel">
+        <div class="slick-item" *ngFor="let m of movies.results" ngxSlickItem>
+          <img src="https://image.tmdb.org/t/p/w200{{m?.poster_path}}" alt="{{m.title}}">
         </div>
+      </ngx-slick-carousel>
     </div>
-</div>
+  </div>
+</div> -->

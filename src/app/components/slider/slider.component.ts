@@ -7,7 +7,7 @@ import { Movies } from 'src/app/models/movies';
   styleUrls: ['./slider.component.scss']
 })
 export class SliderComponent implements OnInit {
-  @Input() sliderCofig;
+  @Input() sliderConfig;
   @Input() movies: Movies;
   @Input() title: string;
 
