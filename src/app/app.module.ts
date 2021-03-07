@@ -18,6 +18,7 @@ import { MainpaheComponent } from './components/mainpahe/mainpahe.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { HttpClientModule } from '@angular/common/http';
+import { VideoplayerComponent } from './components/videoplayer/videoplayer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HttpClientModule } from '@angular/common/http';
     Section5Component,
     FooterComponent,
     MainpaheComponent,
-    SliderComponent
+    SliderComponent,
+    VideoplayerComponent
   ],
   imports: [
     BrowserModule,

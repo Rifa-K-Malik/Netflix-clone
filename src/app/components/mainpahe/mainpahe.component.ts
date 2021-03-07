@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Movies } from 'src/app/models/movies';
 import { MovieService } from 'src/app/services/movie.service';
@@ -40,6 +40,17 @@ export class MainpaheComponent implements OnInit, OnDestroy{
   }
   ngOnDestroy(): void {
     this.subs.map(s => s.unsubscribe());
+  }
+
+
+  @HostListener('window:scroll', ['$event'])
+  handlescroll() {
+    const windowScroll = window.pageYOffset;
+    if(windowScroll >= this.header.nativeElement.offsetHeight) {
+      this.sticky = true;
+    }else {
+      this.sticky = false;
+    }
   }
 
 }
